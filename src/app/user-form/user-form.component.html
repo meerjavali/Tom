@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Add your story to inspire</h2>
+<mat-dialog-content class="mat-typography">
+    
+    <div>
+        <label>Buddy Name</label>
+    </div>
+    <div>
+        <input type="text"  [(ngModel)]="bname" name="bName"  #username="ngModel" required>
+    </div>
+    <div>
+        <label>Title please</label>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="btitle"  name="title"  #usertitle="ngModel" required>
+    </div>
+    <div>
+        <label>My Story</label>
+    </div>
+    <div>
+        <textarea rows="10" [(ngModel)]="bstory"  name="text" cols="50"  #userstory="ngModel" required></textarea>
+    </div>
+    
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+  <button mat-button mat-dialog-close>Dont Inspire</button>
+  <button mat-button [mat-dialog-close]="true" [disabled]="!username.valid || !usertitle.valid || !userstory.valid" (click)="post()">Post to Inspire</button>
+</mat-dialog-actions>

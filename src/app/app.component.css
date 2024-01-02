@@ -1,0 +1,57 @@
+.imgClass{
+    flex-basis: 10%;
+    /* background-color: green; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stories{
+    display:flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.storyClass{
+    /* background-color: red; */
+    flex-basis: 90%;
+}
+.HeaderBanner{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonCta{
+    background-color: transparent;
+    border: 0px;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-style: bold;
+    color:#ff2a00;
+    font-size: 20px;
+    
+}
+.sticky{
+    position:fixed;
+    display: block;
+    background-color: #dbe5e5;
+    width:100%;
+    top:0px;
+}
+.container{
+    margin:10px;
+    margin-top:58px;
+}
+@media (max-width:991px) {
+    .stories{
+        flex-direction: column;
+    }
+    .container{
+        margin:10px;
+        margin-top:120px;
+    }
+    .HeaderBanner{
+        flex-direction:column;
+        text-align: center;
+        align-items: center;
+    }
+    
+}

@@ -1,0 +1,29 @@
+<div class="sticky">
+  <div class="HeaderBanner">
+      <div>
+        <h1 [ngStyle]="{'display':'inline'}">Stray Stories are real love stories</h1>
+        <!-- <h2>you love them unconditionally.............</h2> -->
+        <img src="../assets/images/paw.png" width="50" height="50">
+      </div>
+      <button class="buttonCta" (click)="openDialog()"> Add your Story</button>
+    
+  </div>
+</div>
+<div class="container">
+    <div class="stories" *ngFor="let tom of a">
+       <div class="imgClass">
+        <img src="../assets/images/storyImg.jpg" width="120" height="130" alt="photo of pet" >
+        <h3 [ngStyle]="{'margin':'0px'}">{{tom.name}}</h3>
+  
+       </div>
+       <div class="storyClass">
+        <h2>{{tom.title}}</h2>
+        <p>{{tom.story}}</p>
+       </div>
+       
+    </div>
+    <h3><button type="button" (click)="openDialog()" >Please Add your stray story here</button> your Stray story can motivate others. it will give a home to stray </h3>
+  
+  
+  
+</div>

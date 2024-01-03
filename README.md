@@ -4,7 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # To implement this project you need Angular running in your local
 
-run `npm i @angular/cli@16.2.2`
+run for Angular setup local `npm i -g @angular/cli@16.2.2`
+
+## install dependencies using npm command
+
+run 'npm i`
+
 
 ## Development server
 
